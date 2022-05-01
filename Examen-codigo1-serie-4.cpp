@@ -1,17 +1,20 @@
 #include <iostream>
-using namespace:: std;
+#include <cstdlib>
 
-//19.- CONSTRUIR LA TABLA DE DIVIDIR QUE EL USUARIO INDIQUE.
-int main(void) {
-	
-	float N;
-	cout<<"ingrese un numero para dividir" <<endl;
-	cin>> N;
-	cout<<endl;
-	
-	for(int i=1;i<=20;i++){
-		cout<<N<<" / "<<i<<" = " << N/i<<endl;
-	}
-	
-	return 0;
+using namespace std;
+
+int main(){
+float  numero;
+
+do{
+cout<<"Ingrese un numero: "; 
+cin>>numero;
+}
+while((numero<=1)||(numero>=100));
+for(int i=1; i<=100; i++){
+cout<<numero<<" / "<<i<<" = "<<numero/i<<endl;
+}
+cout<<"\n\n";
+system("pause");
+return 0;
 }
